@@ -116,7 +116,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(ProjectDir)..\packages\RepositoriesForBinFolder\*.*" "$(SolutionDir)Kraken.WPF.Consumer\bin\Debug\" /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(ProjectDir)..\CustomersBinaries\*.*" "$(SolutionDir)Kraken.WPF.Consumer\bin\Debug\" /Y</PostBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
